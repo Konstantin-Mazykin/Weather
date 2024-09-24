@@ -14,8 +14,10 @@ function render(data, htmlElement) {
 
   // htmlElement.appendChild(section);
 
+  const section = "currentWeather";
+
   const weatherInfo = `
-            <div class="currentWeather">
+            <div class="${section}">
                 <h2>Погода у населеному пункті ${data.name} (${data.sys.country}) </h2>
                 <p>Погода: ${data.weather[0].description}</p>
                 <p>Поточна температура: ${data.main.temp}&#186;С (максимальна: ${data.main.temp_max}&#186;С, мінімальна: ${
