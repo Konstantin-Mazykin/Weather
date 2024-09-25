@@ -9,6 +9,7 @@ function requestWeather(apiKey, city, htmlElement) {
       return response.json();
     })
     .then((data) => {
+      console.log(data);
       render(data, htmlElement);
     })
     .catch((error) => {
