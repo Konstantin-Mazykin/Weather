@@ -1,3 +1,5 @@
+import { requestWeather } from "./request.js";
+
 let element = document.querySelector("#weatherResult");
 
 const requestForm = document.querySelector("#requestForm");

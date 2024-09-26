@@ -1,4 +1,6 @@
-function requestWeather(apiKey, city, htmlElement) {
+import { render } from "./view.js";
+
+export function requestWeather(apiKey, city, htmlElement) {
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=uk`;
 
   fetch(apiUrl)

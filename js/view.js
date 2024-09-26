@@ -1,4 +1,4 @@
-function render(data, htmlElement) {
+export function render(data, htmlElement) {
   htmlElement.innerHTML = "";
 
   // let section = document.createElement("div");
